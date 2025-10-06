@@ -1,0 +1,38 @@
+:root{
+  --brand-1: #ff6b6b;
+  --brand-2: #ff9f43;
+  --brand-3: #54a0ff;
+  --brand-4: #5f27cd;
+  --brand-5: #10ac84;
+  --card-radius: 10px;
+}
+
+#expenses-cards .expense-card{
+  border-radius: var(--card-radius);
+  overflow: hidden;
+}
+
+.expense-card .card-body{ 
+  padding: 1rem;
+}
+
+/* gradient variants (cycle through a few pleasant colors) */
+.bg-gradient-1{ background: linear-gradient(135deg,var(--brand-1), #ff8787); }
+.bg-gradient-2{ background: linear-gradient(135deg,var(--brand-2), #ffd57e); }
+.bg-gradient-3{ background: linear-gradient(135deg,var(--brand-3), #74c0fc); }
+.bg-gradient-4{ background: linear-gradient(135deg,var(--brand-4), #845ef7); }
+.bg-gradient-5{ background: linear-gradient(135deg,var(--brand-5), #2dd4bf); }
+
+/* repeat pattern for more cards */
+.bg-gradient-6{ background: linear-gradient(135deg,#ff6b6b,#ffd6a5); }
+.bg-gradient-7{ background: linear-gradient(135deg,#ff9f43,#ffd9b8); }
+
+.expense-card h5{ font-weight:700; }
+.expense-card .card-text{ opacity:0.95; }
+
+/* small responsive tweaks */
+@media (max-width: 576px){
+  #expenses-cards .expense-card{ min-height: 120px; }
+}
+
+.pagination-container{ margin-top:1rem }
